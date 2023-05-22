@@ -13,8 +13,11 @@ public:
 	~ibu(string pnama) :(nama(pnama) {
 		cout << "ibu \"" << nama << "\"tidak ada\n";
 	}
-
-
+	void tambahanak(anak*);
+	void cetakanak();
 
 };
+void ibu::tambahanak(anak*) {
+	daftar_anak.push_back(panak);
+}
 #endif
