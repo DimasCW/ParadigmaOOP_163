@@ -9,24 +9,24 @@ using namespace std;
 
 class ibu {
 public:
-	string nama:
+	string nama;
 	vector<anak*> daftar_anak;
 
-	ibu(string pNama) :(nama(pNama) {
+	ibu(string pNama) :nama(pNama) {
 		cout << "ibu \"" << nama << "\" ada\n";
 	}
-	~ibu(string pNama) :(nama(pNama) {
+	~ibu(){
 		cout << "ibu \"" << nama << "\"tidak ada\n";
 	}
 	void tambahAnak(anak*);
 	void cetakAnak();
 
 };
-void ibu::tambahAnak(anak*) {
-	daftar_anak.push_back(panak);
+void ibu::tambahAnak(anak*pAnak) {
+	daftar_anak.push_back(pAnak);
 }
 void ibu::cetakAnak() {
-	cout << "daftar anak dari \"" << this->nama << "\":\n";
+	cout << "daftar anak dari ibu  \"" << this->nama << "\":\n";
 	for (auto& a: daftar_anak) {
 		cout << a->nama << "\n";
 	}
