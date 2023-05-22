@@ -4,6 +4,7 @@
 #include<iostream>;
 #include"anak.h"
 #include<vector>
+
 using namespace std;
 
 class ibu {
@@ -11,20 +12,20 @@ public:
 	string nama:
 	vector<anak*> daftar_anak;
 
-	ibu(string pnama) :(nama(pnama) {
+	ibu(string pNama) :(nama(pNama) {
 		cout << "ibu \"" << nama << "\" ada\n";
 	}
-	~ibu(string pnama) :(nama(pnama) {
+	~ibu(string pNama) :(nama(pNama) {
 		cout << "ibu \"" << nama << "\"tidak ada\n";
 	}
-	void tambahanak(anak*);
-	void cetakanak();
+	void tambahAnak(anak*);
+	void cetakAnak();
 
 };
-void ibu::tambahanak(anak*) {
+void ibu::tambahAnak(anak*) {
 	daftar_anak.push_back(panak);
 }
-void ibu::cetakanak() {
+void ibu::cetakAnak() {
 	cout << "daftar anak dari \"" << this->nama << "\":\n";
 	for (auto& a: daftar_anak) {
 		cout << a->nama << "\n";

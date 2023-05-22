@@ -5,10 +5,10 @@
 class anak {
 public:
 	string nama;
-	anak(string pnama) :nama(pnama) {
+	anak(string pNama) :nama(pNama) {
 		cout << "anak \"" << nama << "\"ada\n";
 	}
-	~anak(string pnama) :nama(pnama) {
+	~anak(){
 		cout << "anak \"" << nama << "\"tidak ada\n";
 	}
 
